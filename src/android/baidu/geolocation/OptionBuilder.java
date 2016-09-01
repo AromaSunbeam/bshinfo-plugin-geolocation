@@ -115,6 +115,14 @@ public class OptionBuilder {
       option.setTimeOut(27000);
       Log.v(TAG, "超时时间-TimeOut 设置异常:"+e);
     }
+
+    try {
+      // 设置是否允许模拟GPS true:允许； false:不允许，默认为false
+      option.setEnableSimulateGps(options.getBoolean("enableSimulateGps"));
+    } catch (JSONException e) {
+      option.setEnableSimulateGps(false);
+      Log.v(TAG, "是否允许模拟GPS-EnableSimulateGps 设置异常:"+e);
+    }
     return option;
   }
 
