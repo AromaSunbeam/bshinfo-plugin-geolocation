@@ -1,4 +1,4 @@
-package com.baidu.geolocation;
+package com.bshinfo.plugins.geolocation;
 
 import com.baidu.location.BDLocation;
 

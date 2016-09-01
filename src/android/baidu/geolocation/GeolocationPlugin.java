@@ -1,4 +1,4 @@
-package com.baidu.geolocation;
+package com.bshinfo.plugins.geolocation;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
